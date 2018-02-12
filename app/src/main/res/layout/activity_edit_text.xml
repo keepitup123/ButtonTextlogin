@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/et_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_margin="10dp"
+        android:hint="用户名"
+        android:maxLines="1"
+        android:drawableLeft="@drawable/account"
+        android:drawablePadding="5dp"
+        android:padding="10dp"
+        android:background="@drawable/bg_btn_2"/>
+
+    <EditText
+        android:id="@+id/et_2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_margin="10dp"
+        android:layout_below="@id/et_1"
+        android:hint="密码"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="5dp"
+        android:padding="10dp"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:background="@drawable/bg_btn_2"/>
+    <Button
+        android:id="@+id/btn_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登陆"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_btn_3"
+        android:textColor="#09097F"
+        android:layout_below="@+id/et_2"
+        android:onClick="showToast"/>
+    <Button
+        android:id="@+id/btn_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="取消并退出"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_marginTop="30dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_btn_3"
+        android:textColor="#09097F"
+        android:layout_below="@+id/btn_3"
+        android:onClick="showToast"/>
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/btn_4"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:maxLines="2"
+        android:text="贪玩蓝月欢迎您的到来...!!!活动送麻痹戒指了         陈小春在贪玩蓝月等你！！！"
+        android:textSize="18sp"
+        android:textColor="#DD0085"/>
+
+</RelativeLayout>
